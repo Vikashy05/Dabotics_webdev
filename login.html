@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PG</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Pacifico&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@100&family=Ubuntu:wght@400;500;700&display=swap');
+        *{
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background: url(https://www.hdwallpapers.in/download/aurora_borealis_lake_mountain_night_reflection_under_starry_sky_hd_winter-HD.jpg)no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .login{
+            width:400px;
+            color: aliceblue;
+            background:transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 35px;
+            padding: 30px;
+            box-shadow: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+        }
+        .login h1{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            font-size: 2.5rem;
+        }
+        .input{
+            width: 100%;
+            height: 55px;
+            text-align: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .input input{
+            width: 100%;
+            height: 30px;
+            border-radius: 40px;
+            background: transparent;
+            color: aliceblue;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            font-size: 1.4rem;
+            padding: 20px 45px 20px 20px;
+        }
+        .input input::placeholder{
+            color: rgb(231, 244, 255);
+        }
+        .input .user{
+            margin-bottom: 18px;
+        }
+        .input .user i{
+            margin-top: 10px;
+        }
+        .input .passkey i{
+            margin-top: 10px;
+        }
+        .input i{
+            position: absolute;
+            right: 20px;  
+            font-size: 20px;
+        }
+        
+        .pass{
+            width: 100%;
+            height: 30px;
+            color: azure;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            font-size: 1.1rem;
+        }
+        .pass #remember{
+            accent-color:hsl(250, 100%, 34%); 
+        }
+        .pass a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: 500;
+        }
+        .pass a:hover{
+            text-decoration:underline;
+        }
+        .button {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+	     text-decoration: none;
+        }
+        button{
+            font-size: 1.5rem;
+            border-radius: 40px;
+            width: 80%;
+            color: black;
+            font-weight: 600;
+            border: none;
+            border-color: darkgray;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        button:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+        .register-link{
+            margin:10px;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        .register-link a{
+            padding: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            color: azure;
+        }
+        .register-link a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>LOGIN</h1>
+            <form>
+               <div class="input">
+                    <div class="user">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="passkey">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+               </div>
+                <div class="pass">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                        <div> 
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                </div>
+                <div class="button">
+                    <button><a href="index.html">Login</a></button>
+                </div>
+                <footer class="register-link">
+                    <p>Don't have an account?<a href="#">Register</a></p>
+                </footer>
+            </form>
+    </div>
+    </div>
+</body>
+</html>
